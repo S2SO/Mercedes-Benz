@@ -1,0 +1,72 @@
+.magazine {
+  max-width: 1024px;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+}
+.magazine-contents {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.magazine-contents > .name {
+  margin: 0;
+}
+.magazine-info {
+  font-size: 30px;
+}
+
+.magazine-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+.magazine-card {
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+.magazine-card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hover-card {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.hover-card > p {
+  width: 90%;
+}
+.card-name {
+  font-size: 14px;
+}
+.card-info {
+  font-size: 11px;
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+.magazine-card:hover .hover-card {
+  opacity: 1;
+}
