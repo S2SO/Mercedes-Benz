@@ -93,4 +93,7 @@ nav {
   .extraMenu {
     display: none;
   }
+  html {
+    scroll-snap-type: none;
+  }
 }
