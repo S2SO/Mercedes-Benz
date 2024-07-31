@@ -20,6 +20,7 @@
 }
 .magazine-info {
   font-size: 30px;
+  text-align: center;
 }
 
 .magazine-container {
@@ -80,5 +81,11 @@
   }
   .magazine-container {
     flex-direction: column;
+  }
+  .card-name {
+    font-size: 20px;
+  }
+  .card-info {
+    font-size: 14px;
   }
 }
