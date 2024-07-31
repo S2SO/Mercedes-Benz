@@ -5,6 +5,7 @@
 
   display: flex;
   align-items: center;
+  font-family: "SUITE-Regular";
 }
 .magazine-contents {
   width: 100%;
@@ -69,4 +70,15 @@
 }
 .magazine-card:hover .hover-card {
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .magazine {
+    width: 90%;
+    height: auto;
+    padding: 100px 0;
+  }
+  .magazine-container {
+    flex-direction: column;
+  }
 }

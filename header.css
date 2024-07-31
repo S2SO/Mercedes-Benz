@@ -5,6 +5,13 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "ChosunSm";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.1/ChosunSm.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 html::-webkit-scrollbar {
   display: none;
@@ -33,7 +40,7 @@ header {
 }
 nav {
   max-width: 1024px;
-  width: 80%;
+  width: 90%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -52,7 +59,7 @@ nav {
 }
 .headMenu {
   display: flex;
-  gap: 40px;
+  gap: 35px;
   font-size: 18px;
 }
 .extraMenu {
@@ -77,4 +84,13 @@ nav {
 }
 .headIcons > i {
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .headMenu {
+    display: none;
+  }
+  .extraMenu {
+    display: none;
+  }
 }

@@ -2,6 +2,7 @@
   width: 100vw;
   height: 100vh;
   position: relative;
+  font-family: "SUITE-Regular";
 }
 .defining-bg {
   width: 100vw;
@@ -37,9 +38,11 @@
 }
 .defining-title {
   font-size: 50px;
+  font-family: "ChosunSm";
 }
 .defining-since {
   font-size: 25px;
+  font-family: "ChosunSm";
 }
 .defining-contents > .moreView-button {
   border: 2px solid white;

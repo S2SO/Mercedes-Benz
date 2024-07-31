@@ -4,6 +4,7 @@
   height: fit-content;
   margin: 0 auto;
   padding-top: 100px;
+  font-family: "SUITE-Regular";
 }
 .vision-textContents {
   display: flex;
@@ -68,4 +69,29 @@
   gap: 20px;
   word-break: keep-all;
   line-height: 1.4;
+}
+.vision-videoContents > iframe {
+  width: 560px;
+  height: 410px;
+}
+
+@media screen and (max-width: 768px) {
+  .vision {
+    width: 90%;
+    min-width: 320px;
+  }
+  .vision-videoContents {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .vision-video-text {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .video-info {
+    font-size: 17px;
+  }
+  .vision-videoContents > iframe {
+    width: 100%;
+  }
 }

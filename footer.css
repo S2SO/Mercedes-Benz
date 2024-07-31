@@ -6,6 +6,7 @@ footer {
 
   display: flex;
   align-items: center;
+  font-family: "SUITE-Regular";
 }
 .foot-container {
   width: 70%;
@@ -51,4 +52,43 @@ footer {
 }
 .sns > i {
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    height: 200px;
+    padding-top: 30px;
+  }
+  .foot-container {
+    width: 90%;
+    min-width: 320px;
+  }
+  .foot-container > .logo {
+    display: none;
+  }
+
+  .foot-links {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .linkBox {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .linkBox > ul > li {
+    width: 100%;
+    text-align: center;
+  }
+  .contactMenu {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .foot-menu {
+    grid-template-columns: repeat(4, 1fr);
+    width: 60%;
+    margin: 0 auto;
+  }
+  .sns {
+    justify-content: center;
+  }
 }
